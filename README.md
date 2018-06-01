@@ -1,5 +1,7 @@
 # snowTest
 
+PREREQUISITES | Node, Yarn, Express, Create-react-app
+
 Steps to setup and run the code
 
 1. Download/Clone the code to a suitable location.
