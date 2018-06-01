@@ -1,0 +1,20 @@
+{
+  "name": "snow",
+  "version": "1.0.0",
+  "description": "Test Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "Subodh Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "cross-fetch": "^2.2.0",
+    "express": "^4.16.3"
+  }
+}
